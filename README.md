@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-# background-geolocation-swift-demo
-SwiftUI demo of BackgroundGeolocation SDK
-=======
 # Background Geolocation Swift Demo
 
 A SwiftUI demo application for the [Background Geolocation SDK](https://github.com/transistorsoft/background-geolocation-ios) for iOS.
