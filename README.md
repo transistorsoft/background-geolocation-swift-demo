@@ -59,5 +59,4 @@ Transistor Software
 
 ## License
 
-MIT (or specify your license)
->>>>>>> c65d370 (Initial commit)
+MIT
