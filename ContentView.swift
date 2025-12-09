@@ -351,38 +351,65 @@ struct ContentView: View {
         let bgGeo = BackgroundGeolocation.sharedInstance()
         
         bgGeo.onLocation({ event in
-            NSLog("******* onLocation: \(event)")
+            NSLog("[onLocation] \(event.toDictionary())")
             
             let loc = event.location
             // Use the provided CLLocation directly
-            if let last = lastLocation {
+            if let last = self.lastLocation {
                 let incrementalDistance = loc.distance(from: last) / 1000.0
-                odometerKm += incrementalDistance
+                self.odometerKm += incrementalDistance
                 // Placeholder for odometer error calculation
-                odometerErrorKm = 0.05 * odometerKm
+                self.odometerErrorKm = 0.05 * self.odometerKm
             }
-            lastLocation = loc
-            statusMessage = "Location updated"
+            self.lastLocation = loc
+            self.statusMessage = "Location updated"
         }, failure: { error in
             print("❌ Location error: \(error)")
-            statusMessage = "Location error"
+            self.statusMessage = "Location error"
         })
         
         bgGeo.onMotionChange { event in
-            isMoving = event.isMoving
+            self.isMoving = event.isMoving
             let loc = event.location
-            lastLocation = loc
+            self.lastLocation = loc
         }
         
         bgGeo.onActivityChange { event in
-            currentActivity = event.activity
+            self.currentActivity = event.activity
         }
         
         bgGeo.onProviderChange { event in
-            providerEnabled = event.enabled
+            self.providerEnabled = event.enabled
         }
         
         bgGeo.ready()
+        
+        // Get the current state and update UI
+        let state = TSConfig.sharedInstance().toDictionary()
+        if let stateDict = state as? [String: Any] {
+            // Update tracking enabled state
+            if let enabled = stateDict["enabled"] as? Bool {
+                self.trackingEnabled = enabled
+            }
+            
+            // Update moving state
+            if let moving = stateDict["isMoving"] as? Bool {
+                self.isMoving = moving
+            }
+            
+            // Update odometer
+            if let odometer = stateDict["odometer"] as? Double {
+                self.odometerKm = odometer / 1000.0  // Convert meters to km
+            }
+            
+            // Update provider status if available
+            if let providerDict = stateDict["providerchange"] as? [String: Any],
+               let enabled = providerDict["enabled"] as? Bool {
+                self.providerEnabled = enabled
+            }
+            
+            print("Initial state loaded - Tracking: \(self.trackingEnabled), Moving: \(self.isMoving)")
+        }
         
         Self.isConfigured = true
     }
@@ -454,26 +481,11 @@ struct ContentView: View {
     }
     
     private func handleEmailLog() {
-        BackgroundGeolocation.sharedInstance().emailLog(
-            "chris@transistorsoft.com",
-            success: {
-                print("[EmailLog] Success")
-            },
-            failure: { error in
-                print("[EmailLog] Failure: \(error)")
-            }
-        )
+        //BackgroundGeolocation.sharedInstance().emailLog("chris@transistorsoft.com")
     }
     
     private func handleSync() {
-        let bgGeo = BackgroundGeolocation.sharedInstance()
-        bgGeo.sync({ records in
-            print("[Sync] Success: \(records.count) records")
-            statusMessage = "Synced \(records.count) records"
-        }, failure: { error in
-            print("[Sync] Failure: \(error)")
-            statusMessage = "Sync failed"
-        })
+        //BackgroundGeolocation.sharedInstance().sync()
     }
     
     private func handleDestroyLocations() {
