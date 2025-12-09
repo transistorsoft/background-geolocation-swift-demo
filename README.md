@@ -29,7 +29,8 @@ cd background-geolocation-swift-demo
 
 2. Open the project in Xcode:
 ```bash
-open BGGeoSwift.xcodeproj
+pod install
+open BGGeoSwift.xcworkspace
 ```
 
 3. Install the Background Geolocation SDK (if not already included)
