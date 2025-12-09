@@ -119,7 +119,7 @@ struct ContentView: View {
                             }
                             
                             if let error = odometerErrorKm {
-                                Text("±\(String(format: "%.0f", error)) m")
+                                Text("±\(String(format: "%.0f", error)) km")
                                     .font(.caption2)
                                     .foregroundColor(.secondary)
                             }
@@ -384,32 +384,15 @@ struct ContentView: View {
         
         bgGeo.ready()
         
-        // Get the current state and update UI
-        let state = TSConfig.sharedInstance().toDictionary()
-        if let stateDict = state as? [String: Any] {
-            // Update tracking enabled state
-            if let enabled = stateDict["enabled"] as? Bool {
-                self.trackingEnabled = enabled
-            }
-            
-            // Update moving state
-            if let moving = stateDict["isMoving"] as? Bool {
-                self.isMoving = moving
-            }
-            
-            // Update odometer
-            if let odometer = stateDict["odometer"] as? Double {
-                self.odometerKm = odometer / 1000.0  // Convert meters to km
-            }
-            
-            // Update provider status if available
-            if let providerDict = stateDict["providerchange"] as? [String: Any],
-               let enabled = providerDict["enabled"] as? Bool {
-                self.providerEnabled = enabled
-            }
-            
-            print("Initial state loaded - Tracking: \(self.trackingEnabled), Moving: \(self.isMoving)")
-        }
+        // Set current UI state.
+        self.trackingEnabled = config.enabled
+        self.isMoving = config.isMoving
+        // Update odometer
+        let odometer = TSOdometer.sharedInstance()
+        self.odometerKm = odometer.odometer / 1000.0  // Convert meters to km
+        self.odometerErrorKm = odometer.odometerError / 1000.0
+        
+        print("Initial state loaded - Tracking: \(self.trackingEnabled), Moving: \(self.isMoving)")
         
         Self.isConfigured = true
     }
