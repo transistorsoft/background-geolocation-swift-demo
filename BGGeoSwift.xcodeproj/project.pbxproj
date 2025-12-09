@@ -1,0 +1,768 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0E82FD191E94826060EDE1BA /* Pods_BGGeoSwiftTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D73F3B75DA02549F6DB22104 /* Pods_BGGeoSwiftTests.framework */; };
+		67A3785F769F1FE5DDE13160 /* Pods_BGGeoSwift_BGGeoSwiftUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6A57DAFBC7F4251B05A8CFA /* Pods_BGGeoSwift_BGGeoSwiftUITests.framework */; };
+		DD4D3891EF9F28DF92DDD67A /* Pods_BGGeoSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45CFC8C459DFF175A6D834D3 /* Pods_BGGeoSwift.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		83A9139D2EE867DB0072B451 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 83A913872EE867D90072B451 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 83A9138E2EE867D90072B451;
+			remoteInfo = BGGeoSwift;
+		};
+		83A913A72EE867DB0072B451 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 83A913872EE867D90072B451 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 83A9138E2EE867D90072B451;
+			remoteInfo = BGGeoSwift;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		418F7B13AAD68558875E2378 /* Pods-BGGeoSwift-BGGeoSwiftUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BGGeoSwift-BGGeoSwiftUITests.debug.xcconfig"; path = "Target Support Files/Pods-BGGeoSwift-BGGeoSwiftUITests/Pods-BGGeoSwift-BGGeoSwiftUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		45811012759B529495289C8F /* Pods-BGGeoSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BGGeoSwift.release.xcconfig"; path = "Target Support Files/Pods-BGGeoSwift/Pods-BGGeoSwift.release.xcconfig"; sourceTree = "<group>"; };
+		45CFC8C459DFF175A6D834D3 /* Pods_BGGeoSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BGGeoSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		74BCC506E3885124BA055AA7 /* Pods-BGGeoSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BGGeoSwift.debug.xcconfig"; path = "Target Support Files/Pods-BGGeoSwift/Pods-BGGeoSwift.debug.xcconfig"; sourceTree = "<group>"; };
+		82758DC8FAA41AA584E640CF /* Pods-BGGeoSwiftTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BGGeoSwiftTests.debug.xcconfig"; path = "Target Support Files/Pods-BGGeoSwiftTests/Pods-BGGeoSwiftTests.debug.xcconfig"; sourceTree = "<group>"; };
+		83A9138F2EE867D90072B451 /* BGGeoSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BGGeoSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		83A9139C2EE867DB0072B451 /* BGGeoSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BGGeoSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		83A913A62EE867DB0072B451 /* BGGeoSwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BGGeoSwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B06B09050C4968D9119AE863 /* Pods-BGGeoSwift-BGGeoSwiftUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BGGeoSwift-BGGeoSwiftUITests.release.xcconfig"; path = "Target Support Files/Pods-BGGeoSwift-BGGeoSwiftUITests/Pods-BGGeoSwift-BGGeoSwiftUITests.release.xcconfig"; sourceTree = "<group>"; };
+		B6A57DAFBC7F4251B05A8CFA /* Pods_BGGeoSwift_BGGeoSwiftUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BGGeoSwift_BGGeoSwiftUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D73F3B75DA02549F6DB22104 /* Pods_BGGeoSwiftTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BGGeoSwiftTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E23B57241A997C18CCFB6C43 /* Pods-BGGeoSwiftTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BGGeoSwiftTests.release.xcconfig"; path = "Target Support Files/Pods-BGGeoSwiftTests/Pods-BGGeoSwiftTests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		83A914D22EE892230072B451 /* Exceptions for "BGGeoSwift" folder in "BGGeoSwift" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 83A9138E2EE867D90072B451 /* BGGeoSwift */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		83A913912EE867D90072B451 /* BGGeoSwift */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				83A914D22EE892230072B451 /* Exceptions for "BGGeoSwift" folder in "BGGeoSwift" target */,
+			);
+			path = BGGeoSwift;
+			sourceTree = "<group>";
+		};
+		83A9139F2EE867DB0072B451 /* BGGeoSwiftTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = BGGeoSwiftTests;
+			sourceTree = "<group>";
+		};
+		83A913A92EE867DB0072B451 /* BGGeoSwiftUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = BGGeoSwiftUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		83A9138C2EE867D90072B451 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD4D3891EF9F28DF92DDD67A /* Pods_BGGeoSwift.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83A913992EE867DB0072B451 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0E82FD191E94826060EDE1BA /* Pods_BGGeoSwiftTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83A913A32EE867DB0072B451 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				67A3785F769F1FE5DDE13160 /* Pods_BGGeoSwift_BGGeoSwiftUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7B8CD1D5B6B256C47D41CD86 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				74BCC506E3885124BA055AA7 /* Pods-BGGeoSwift.debug.xcconfig */,
+				45811012759B529495289C8F /* Pods-BGGeoSwift.release.xcconfig */,
+				418F7B13AAD68558875E2378 /* Pods-BGGeoSwift-BGGeoSwiftUITests.debug.xcconfig */,
+				B06B09050C4968D9119AE863 /* Pods-BGGeoSwift-BGGeoSwiftUITests.release.xcconfig */,
+				82758DC8FAA41AA584E640CF /* Pods-BGGeoSwiftTests.debug.xcconfig */,
+				E23B57241A997C18CCFB6C43 /* Pods-BGGeoSwiftTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		83A913862EE867D90072B451 = {
+			isa = PBXGroup;
+			children = (
+				83A913912EE867D90072B451 /* BGGeoSwift */,
+				83A9139F2EE867DB0072B451 /* BGGeoSwiftTests */,
+				83A913A92EE867DB0072B451 /* BGGeoSwiftUITests */,
+				83A913902EE867D90072B451 /* Products */,
+				7B8CD1D5B6B256C47D41CD86 /* Pods */,
+				A80F540B0B0F9D7BE9D1403D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		83A913902EE867D90072B451 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				83A9138F2EE867D90072B451 /* BGGeoSwift.app */,
+				83A9139C2EE867DB0072B451 /* BGGeoSwiftTests.xctest */,
+				83A913A62EE867DB0072B451 /* BGGeoSwiftUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A80F540B0B0F9D7BE9D1403D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				45CFC8C459DFF175A6D834D3 /* Pods_BGGeoSwift.framework */,
+				B6A57DAFBC7F4251B05A8CFA /* Pods_BGGeoSwift_BGGeoSwiftUITests.framework */,
+				D73F3B75DA02549F6DB22104 /* Pods_BGGeoSwiftTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		83A9138E2EE867D90072B451 /* BGGeoSwift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 83A913B02EE867DB0072B451 /* Build configuration list for PBXNativeTarget "BGGeoSwift" */;
+			buildPhases = (
+				6BEEDD639C72F43751F58B95 /* [CP] Check Pods Manifest.lock */,
+				83A9138B2EE867D90072B451 /* Sources */,
+				83A9138C2EE867D90072B451 /* Frameworks */,
+				83A9138D2EE867D90072B451 /* Resources */,
+				F937BB2FC1FB6D02A8A858CB /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				83A913912EE867D90072B451 /* BGGeoSwift */,
+			);
+			name = BGGeoSwift;
+			productName = BGGeoSwift;
+			productReference = 83A9138F2EE867D90072B451 /* BGGeoSwift.app */;
+			productType = "com.apple.product-type.application";
+		};
+		83A9139B2EE867DB0072B451 /* BGGeoSwiftTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 83A913B32EE867DB0072B451 /* Build configuration list for PBXNativeTarget "BGGeoSwiftTests" */;
+			buildPhases = (
+				727D870BC6F021126372017B /* [CP] Check Pods Manifest.lock */,
+				83A913982EE867DB0072B451 /* Sources */,
+				83A913992EE867DB0072B451 /* Frameworks */,
+				83A9139A2EE867DB0072B451 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				83A9139E2EE867DB0072B451 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				83A9139F2EE867DB0072B451 /* BGGeoSwiftTests */,
+			);
+			name = BGGeoSwiftTests;
+			productName = BGGeoSwiftTests;
+			productReference = 83A9139C2EE867DB0072B451 /* BGGeoSwiftTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		83A913A52EE867DB0072B451 /* BGGeoSwiftUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 83A913B62EE867DB0072B451 /* Build configuration list for PBXNativeTarget "BGGeoSwiftUITests" */;
+			buildPhases = (
+				4C49BC13438B0F1B872ED278 /* [CP] Check Pods Manifest.lock */,
+				83A913A22EE867DB0072B451 /* Sources */,
+				83A913A32EE867DB0072B451 /* Frameworks */,
+				83A913A42EE867DB0072B451 /* Resources */,
+				56BFBD0D552799C3CAD4559D /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				83A913A82EE867DB0072B451 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				83A913A92EE867DB0072B451 /* BGGeoSwiftUITests */,
+			);
+			name = BGGeoSwiftUITests;
+			productName = BGGeoSwiftUITests;
+			productReference = 83A913A62EE867DB0072B451 /* BGGeoSwiftUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		83A913872EE867D90072B451 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2610;
+				LastUpgradeCheck = 2610;
+				TargetAttributes = {
+					83A9138E2EE867D90072B451 = {
+						CreatedOnToolsVersion = 26.1.1;
+					};
+					83A9139B2EE867DB0072B451 = {
+						CreatedOnToolsVersion = 26.1.1;
+						TestTargetID = 83A9138E2EE867D90072B451;
+					};
+					83A913A52EE867DB0072B451 = {
+						CreatedOnToolsVersion = 26.1.1;
+						TestTargetID = 83A9138E2EE867D90072B451;
+					};
+				};
+			};
+			buildConfigurationList = 83A9138A2EE867D90072B451 /* Build configuration list for PBXProject "BGGeoSwift" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 83A913862EE867D90072B451;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 83A913902EE867D90072B451 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				83A9138E2EE867D90072B451 /* BGGeoSwift */,
+				83A9139B2EE867DB0072B451 /* BGGeoSwiftTests */,
+				83A913A52EE867DB0072B451 /* BGGeoSwiftUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		83A9138D2EE867D90072B451 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83A9139A2EE867DB0072B451 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83A913A42EE867DB0072B451 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4C49BC13438B0F1B872ED278 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BGGeoSwift-BGGeoSwiftUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		56BFBD0D552799C3CAD4559D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BGGeoSwift-BGGeoSwiftUITests/Pods-BGGeoSwift-BGGeoSwiftUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BGGeoSwift-BGGeoSwiftUITests/Pods-BGGeoSwift-BGGeoSwiftUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BGGeoSwift-BGGeoSwiftUITests/Pods-BGGeoSwift-BGGeoSwiftUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6BEEDD639C72F43751F58B95 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BGGeoSwift-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		727D870BC6F021126372017B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BGGeoSwiftTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F937BB2FC1FB6D02A8A858CB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BGGeoSwift/Pods-BGGeoSwift-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BGGeoSwift/Pods-BGGeoSwift-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BGGeoSwift/Pods-BGGeoSwift-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		83A9138B2EE867D90072B451 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83A913982EE867DB0072B451 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83A913A22EE867DB0072B451 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		83A9139E2EE867DB0072B451 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 83A9138E2EE867D90072B451 /* BGGeoSwift */;
+			targetProxy = 83A9139D2EE867DB0072B451 /* PBXContainerItemProxy */;
+		};
+		83A913A82EE867DB0072B451 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 83A9138E2EE867D90072B451 /* BGGeoSwift */;
+			targetProxy = 83A913A72EE867DB0072B451 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		83A913AE2EE867DB0072B451 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 32A636YFGZ;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.1;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		83A913AF2EE867DB0072B451 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 32A636YFGZ;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.1;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		83A913B12EE867DB0072B451 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 74BCC506E3885124BA055AA7 /* Pods-BGGeoSwift.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 32A636YFGZ;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BGGeoSwift/Info.plist;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = Always;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "When in use";
+				INFOPLIST_KEY_NSMotionUsageDescription = Motion;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.transistorsoft.sdkstatcache.BGGeoSwift;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		83A913B22EE867DB0072B451 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 45811012759B529495289C8F /* Pods-BGGeoSwift.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 32A636YFGZ;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BGGeoSwift/Info.plist;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = Always;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "When in use";
+				INFOPLIST_KEY_NSMotionUsageDescription = Motion;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.transistorsoft.sdkstatcache.BGGeoSwift;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		83A913B42EE867DB0072B451 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 82758DC8FAA41AA584E640CF /* Pods-BGGeoSwiftTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 32A636YFGZ;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.transistorsoft.sdkstatcache.BGGeoSwiftTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BGGeoSwift.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/BGGeoSwift";
+			};
+			name = Debug;
+		};
+		83A913B52EE867DB0072B451 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E23B57241A997C18CCFB6C43 /* Pods-BGGeoSwiftTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 32A636YFGZ;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.transistorsoft.sdkstatcache.BGGeoSwiftTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BGGeoSwift.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/BGGeoSwift";
+			};
+			name = Release;
+		};
+		83A913B72EE867DB0072B451 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 418F7B13AAD68558875E2378 /* Pods-BGGeoSwift-BGGeoSwiftUITests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 32A636YFGZ;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.transistorsoft.sdkstatcache.BGGeoSwiftUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BGGeoSwift;
+			};
+			name = Debug;
+		};
+		83A913B82EE867DB0072B451 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B06B09050C4968D9119AE863 /* Pods-BGGeoSwift-BGGeoSwiftUITests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 32A636YFGZ;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.transistorsoft.sdkstatcache.BGGeoSwiftUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BGGeoSwift;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		83A9138A2EE867D90072B451 /* Build configuration list for PBXProject "BGGeoSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83A913AE2EE867DB0072B451 /* Debug */,
+				83A913AF2EE867DB0072B451 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		83A913B02EE867DB0072B451 /* Build configuration list for PBXNativeTarget "BGGeoSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83A913B12EE867DB0072B451 /* Debug */,
+				83A913B22EE867DB0072B451 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		83A913B32EE867DB0072B451 /* Build configuration list for PBXNativeTarget "BGGeoSwiftTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83A913B42EE867DB0072B451 /* Debug */,
+				83A913B52EE867DB0072B451 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		83A913B62EE867DB0072B451 /* Build configuration list for PBXNativeTarget "BGGeoSwiftUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83A913B72EE867DB0072B451 /* Debug */,
+				83A913B82EE867DB0072B451 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 83A913872EE867D90072B451 /* Project object */;
+}

@@ -1,0 +1,6 @@
+framework module Pods_BGGeoSwift {
+  umbrella header "Pods-BGGeoSwift-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,26 @@
+PODS:
+  - CocoaLumberjack (3.8.5):
+    - CocoaLumberjack/Core (= 3.8.5)
+  - CocoaLumberjack/Core (3.8.5)
+  - TSBackgroundFetch (4.0.5)
+  - TSLocationManager (4.0.0-beta.8):
+    - TSBackgroundFetch (~> 4.0)
+
+DEPENDENCIES:
+  - CocoaLumberjack (~> 3.8.5)
+  - TSLocationManager (~> 4.0.0-beta.7)
+
+SPEC REPOS:
+  trunk:
+    - CocoaLumberjack
+    - TSBackgroundFetch
+    - TSLocationManager
+
+SPEC CHECKSUMS:
+  CocoaLumberjack: 6a459bc897d6d80bd1b8c78482ec7ad05dffc3f0
+  TSBackgroundFetch: e91020924db32f27d0a43df7dec6f73f10743571
+  TSLocationManager: 18506201c141f7a687f4932053459cfd8ff7d348
+
+PODFILE CHECKSUM: 4771ee68848041f46df0d32895b5e266aa983c38
+
+COCOAPODS: 1.16.2
