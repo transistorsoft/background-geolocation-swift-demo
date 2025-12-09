@@ -39,10 +39,10 @@ struct ContentView: View {
                     // Header with title, subtitle, and menu button
                     HStack {
                         VStack(alignment: .leading) {
-                            Text("Background Geolocation")
+                            Text("BG Geolocation")
                                 .font(.largeTitle)
                                 .bold()
-                            Text("Demo Application")
+                            Text("SwiftUI Demo App")
                                 .font(.subheadline)
                                 .foregroundColor(.secondary)
                         }
